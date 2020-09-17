@@ -1,0 +1,186 @@
+/*Created by Shelley Ophir
+Coding Dojo Sep. 17,2020
+Recreate the given portfolio page shown in the image.*/
+
+*{
+    /*outline: 1px dashed pink;*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#container{
+    width: 720px;;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_cell{
+  display: table;/*allows text to be aligned vertically*/
+  align-self: center;
+  font-weight: bold;
+  font-size: 16px;
+  padding-right: 30px;
+}
+
+.table_cell p{
+    margin: 0;
+}
+
+h1{
+  padding-left: 20px;
+  margin: 0;
+  font-family: "Comic Sans MS";
+  font-size: 25px;
+  line-height: 40px;/*couldn't figure out how to make the text vertically centered*/
+}
+
+h2{
+    background-image: linear-gradient(#b0afb2, #878593, #b0afb2);
+    color: white;
+    font-size: 14px;
+    padding: 6px;
+    margin: 0;
+}
+
+h3{
+    background-image: linear-gradient(#b0afb2, #878593, #b0afb2);
+    color: white;
+    padding: 6px;
+    margin: 0;
+    font-size: 13px;
+}
+
+#main_img{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 13px;
+}
+
+#main_img img{
+    height: 198px;
+    border: 4px solid #bebebe;
+}
+
+#center{
+    background-image: radial-gradient(#6f5964, #2b1a1f);
+}
+
+#about{
+    background-image: linear-gradient(90deg,#fefefe, #dbccda);
+    max-width: 361px;
+    height: 199px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#about p{
+    padding: 10px 10px 0;
+    margin: 0;
+}
+
+#about a{
+    color: black;
+    padding: 10px;
+    display: inline-block;
+}
+
+#top{
+    display: inline-block;
+    margin: 15px 22px 14px;
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px 20px;
+}
+
+.panel{
+    width: 214px;
+    height: 400px;
+    display: inline-block;
+    background-image: linear-gradient(90deg,#fefefe, #dbccda);
+    font-size: 14px;
+    text-align: justify;/*stretches text to both edges of div*/
+}
+
+.panel img{
+    height: 118px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.panel p{
+    padding: 0 10px;
+    line-height: 102%;/*tightens the space between text lines*/
+    font-size: 11px;
+    height: 120px;
+}
+
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech img{
+    height: 29px;
+    margin: 5px;
+}
+
+.panel_sub a{
+    background-color: #407d61;
+    border-radius: 7px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 15px gray;/*blurred shadow behind button*/
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: fit-content; /*makes box only fit around the text and removes the extra stretch*/
+
+    transition: .5s;/*adds a smooth transition for the hover over effect*/
+}
+
+.panel_sub a:hover{
+    padding: 15px;
+    background-color: darkgreen;
+    box-shadow: 3px 3px 15px rgb(167, 167, 167);/*color becomes lighter to give the button a jumping out at you effect*/
+}
+
+.panel_sub{
+    width: 214px;
+    height: 133px;
+    background-image: linear-gradient(90deg,#fefefe, #dbccda);
+}
+
+#footer{
+    background-color:white;
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer img{
+    height: 16px;
+    vertical-align: middle;
+}
+
+#footer a{
+    font-style: italic;
+    color: black;
+    vertical-align: middle;
+}
+
+#footer p{
+    margin: 10px;
+}
